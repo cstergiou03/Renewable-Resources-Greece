@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'https://data.gov.gr/api/v1/query/admie_dailyenergybalanceanalysis',
+    url: 'https://data.gov.gr/api/v1/query/admie_realtimescadares',
     dataType: 'jsonp',
     headers: {
         "Authorization": "39cfd83f0388cc86536960a2eebc748761d1accc"
