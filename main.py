@@ -1,9 +1,7 @@
 import tkinter as tk
 from pydatagovgr import DataGovClient
 from tkinter import *
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 #τα του API κτλπ
 gov = DataGovClient(token='39cfd83f0388cc86536960a2eebc748761d1accc')
@@ -81,7 +79,7 @@ def total_mwh():
         
     
     canvas.delete("total")
-    canvas.create_text(190, 180, text="Total MWH: " + str(total_energy), font=("Helvetica", 24), tags="total")
+    canvas.create_text(200, 200, text="Total MWH: " + str(total_energy), font=("Helvetica", 24), tags="total")
 
 def graph():
     if 'mwh' not in globals():
